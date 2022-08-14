@@ -14,7 +14,7 @@ struct ChoresList: View {
     var body: some View {
         NavigationView {
             Form {
-                NoteToTester(testerNote: "Add a chore and then drill into that view. Read the instructions at the top of the page.")
+//                NoteToTester(testerNote: "Add a chore and then drill into that view. Read the instructions at the top of the page.")
                 
                 Section {
                     Button {
