@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChoreListItem: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @ObservedObject var chore: Chore
     
     var body: some View {
