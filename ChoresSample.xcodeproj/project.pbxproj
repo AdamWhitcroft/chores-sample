@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080695FE28A93B570043344E /* NoteToTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080695FD28A93B570043344E /* NoteToTester.swift */; };
 		08BFAB9128A81F8D00D7F71C /* ChoresSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFAB9028A81F8D00D7F71C /* ChoresSampleApp.swift */; };
 		08BFAB9328A81F8D00D7F71C /* ChoresList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFAB9228A81F8D00D7F71C /* ChoresList.swift */; };
 		08BFAB9528A81F8E00D7F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BFAB9428A81F8E00D7F71C /* Assets.xcassets */; };
@@ -20,11 +21,11 @@
 		08BFABAE28A8232A00D7F71C /* ChoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFABAD28A8232A00D7F71C /* ChoreDetailView.swift */; };
 		08BFABB028A8235C00D7F71C /* ChoreListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFABAF28A8235C00D7F71C /* ChoreListItem.swift */; };
 		08BFABB228A8245600D7F71C /* CreateChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFABB128A8245600D7F71C /* CreateChore.swift */; };
-		08BFABB428A8270B00D7F71C /* CreateActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFABB328A8270B00D7F71C /* CreateActivity.swift */; };
 		08BFABB628A8361200D7F71C /* TimeAgoFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFABB528A8361200D7F71C /* TimeAgoFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080695FD28A93B570043344E /* NoteToTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteToTester.swift; sourceTree = "<group>"; };
 		08BFAB8D28A81F8D00D7F71C /* ChoresSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoresSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BFAB9028A81F8D00D7F71C /* ChoresSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresSampleApp.swift; sourceTree = "<group>"; };
 		08BFAB9228A81F8D00D7F71C /* ChoresList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresList.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		08BFABAD28A8232A00D7F71C /* ChoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreDetailView.swift; sourceTree = "<group>"; };
 		08BFABAF28A8235C00D7F71C /* ChoreListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreListItem.swift; sourceTree = "<group>"; };
 		08BFABB128A8245600D7F71C /* CreateChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChore.swift; sourceTree = "<group>"; };
-		08BFABB328A8270B00D7F71C /* CreateActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivity.swift; sourceTree = "<group>"; };
 		08BFABB528A8361200D7F71C /* TimeAgoFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAgoFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,8 +110,8 @@
 				08BFABAF28A8235C00D7F71C /* ChoreListItem.swift */,
 				08BFABAD28A8232A00D7F71C /* ChoreDetailView.swift */,
 				08BFABB128A8245600D7F71C /* CreateChore.swift */,
-				08BFABB328A8270B00D7F71C /* CreateActivity.swift */,
 				08BFABB528A8361200D7F71C /* TimeAgoFormatter.swift */,
+				080695FD28A93B570043344E /* NoteToTester.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -187,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BFAB9F28A81FB100D7F71C /* PersistenceController.swift in Sources */,
+				080695FE28A93B570043344E /* NoteToTester.swift in Sources */,
 				08BFABA828A8211D00D7F71C /* Chore+CoreDataProperties.swift in Sources */,
 				08BFABA728A8211D00D7F71C /* Chore+CoreDataClass.swift in Sources */,
 				08BFAB9328A81F8D00D7F71C /* ChoresList.swift in Sources */,
@@ -195,7 +196,6 @@
 				08BFABB628A8361200D7F71C /* TimeAgoFormatter.swift in Sources */,
 				08BFABAA28A8211D00D7F71C /* Activity+CoreDataProperties.swift in Sources */,
 				08BFABB228A8245600D7F71C /* CreateChore.swift in Sources */,
-				08BFABB428A8270B00D7F71C /* CreateActivity.swift in Sources */,
 				08BFABA928A8211D00D7F71C /* Activity+CoreDataClass.swift in Sources */,
 				08BFAB9128A81F8D00D7F71C /* ChoresSampleApp.swift in Sources */,
 				08BFABA228A81FD800D7F71C /* ChoresDataModel.xcdatamodeld in Sources */,

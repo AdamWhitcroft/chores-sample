@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ChoreDetailView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var chore: Chore
     @State var showCreateActivitySheet = false
     
     var body: some View {
         Form {
+            NoteToTester(testerNote: "Create an activity here, then wait at least a minute. Minimize the app on this view and come back, you'll see the time ago has updated correctly (ie \"1m ago\". Then, go back to the \"Chores\" view, you'll see the time ago does not match.")
             
             Section {
                 Button {
-                    showCreateActivitySheet.toggle()
+                    createActivity(chore: chore)
                 } label: {
                     Text("Add activity")
                 }
@@ -38,8 +40,15 @@ struct ChoreDetailView: View {
         }
         .navigationTitle("\(chore.unwrappedChoreName)")
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showCreateActivitySheet) {
-            CreateActivity(chore: chore)
-        }
+    }
+    
+    // MARK: Create activity
+    private func createActivity(chore: Chore) {
+        let newActivity = Activity(context: viewContext)
+        newActivity.date = Date()
+        newActivity.entry = "Dummy activity"
+        chore.updatedDate = Date()
+        chore.addToActivities(newActivity)
+        PersistenceController.shared.saveContext()
     }
 }
