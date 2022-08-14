@@ -14,7 +14,7 @@ struct ChoreDetailView: View {
     
     var body: some View {
         Form {
-            //            NoteToTester(testerNote: "Create an activity here, then wait at least a minute. Minimize the app on this view and come back, you'll see the time ago has updated correctly (ie \"1m ago\". Then, go back to the \"Chores\" view, you'll see the time ago does not match.")
+            NoteToTester(testerNote: "Create an activity here, then wait at least a minute. Minimize the app on this view and come back, you'll see the time ago has updated correctly (ie \"1m ago\". Then, go back to the \"Chores\" view, you'll see the time ago does not match.")
             
             Section {
                 Button {
