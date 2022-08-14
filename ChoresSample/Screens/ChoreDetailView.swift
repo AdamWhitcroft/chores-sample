@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChoreDetailView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @ObservedObject var chore: Chore
     @State var showCreateActivitySheet = false
     
@@ -33,14 +34,14 @@ struct ChoreDetailView: View {
                         VStack(alignment: .leading) {
                             // Unformatted date
                             if let actualDate = activity.date {
-                                Text("Actual date: \(actualDate, style: .date) at \(actualDate, style: .time)")
+                                Text("**Actual date:** \(actualDate, style: .date) at \(actualDate, style: .time)")
                                     .font(.caption)
                                     .foregroundColor(.secondary)
                             }
                             
                             // Date formatted with timeAgo()
                             if let formattedActivityDate = activity.date {
-                                Text("Formatted date: \(formattedActivityDate.timeAgo())")
+                                Text("**Formatted date:** \(formattedActivityDate.timeAgo())")
                                     .font(.caption)
                                     .foregroundColor(.secondary)
                             }
